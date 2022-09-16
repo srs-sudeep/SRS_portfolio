@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SRS-PORTFOLIO</title>
+    <style>
+        .body{
+            display: flex;
+            flex-direction: column;
+        }
+        .mar{
+            font-family: 'Kdam Thmor Pro', sans-serif;
+           color: white;
+        }
+        .nav{
+            display: flex;
+            background-color:rgb(44, 58, 77);
+            height: 40px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius:5px ;
+            box-shadow: 0px 3px 0px rgb(97, 95, 95);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+        .logo{
+            height:44px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 2px blanchedalmond;
+        }
+        .logoimg{
+            height:44px ;
+            border-radius: 5px;
+        }
+        .nav-a{
+            margin-left: 25%;
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-top: 7px;
+            
+        }
+        .nav-a a{
+            text-decoration:none;
+            color: rgb(237, 229, 229);
+            font-size:large;
+            margin-bottom: 0px;
+            letter-spacing:1px;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all is ease;
+            cursor: -moz-grab;
+            
+            
+        }
+        .nav-a a:hover{
+            color: rgb(147, 240, 245);
+            border-bottom: 5px solid rgb(147, 240, 245) ;
+            letter-spacing: 4px;
+        }
+        .main{
+            display:flex;
+            
+            margin-top: 45px;
+            position: relative;
+
+            
+        }
+        .main-l{
+           
+            background-color: rgb(237, 229, 229); 
+            position: absolute;
+            left: 2%;
+            top:400px;
+            box-shadow: 2px 4px 5px white;
+            height: 250px;
+            width:400px;
+            border-radius: 5px;
+
+        }
+        .name{
+            font-size:40px ;
+            padding-left:75px;
+            color: rgb(9, 9, 74);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin: 0;
+            
+        }
+        .name1{
+            font-size:20px ;
+            padding-left:105px;
+            color: rgb(9, 9, 74);
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin: 0;
+        }
+        .para{
+            font-size: medium;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            text-align: center;
+        }
+        .hire{
+            position: absolute;
+            left:25%;
+            width: 200px ;
+            height:40px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 20px ;
+            font-weight: bold;
+            background-color: black; 
+            color: white;  
+            border-radius: 6px;
+            border: none;
+            box-shadow: 2px 2px 2px white;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            
+        }
+        .hire:hover{
+            color:rgb(9, 9, 74);
+            background-color: white;
+            border-style: groove;
+            border-color: black;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all is ease;
+
+        }
+        .main-m{
+            font: bold;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Space Mono', monospace;
+            font-size: 100px;
+            position: absolute;
+            left: 25%;
+            color: white;
+            letter-spacing: 200px;
+        }
+        .main-m1{
+            font: bold;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 40px;
+            position: absolute;
+            left: 18%;
+            color: white;
+            top:150px ;
+            letter-spacing:10px;
+
+        }
+        .main-r{
+            width:100px;
+            position: absolute;
+            left: 65%;
+            top: 450px;
+            display: inline-block;
+            }
+        .detail{
+            background-color: rgb(237, 229, 229);
+            border-radius: 20px;
+            width:400px;
+            height:40px ;
+            box-shadow: 0px 7px 5px rgb(97, 95, 95) ;
+            margin-bottom:20px ;
+            display: inline-block;
+
+        }
+        .detail summary{
+            font-size: medium;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin-top: 5px;
+            margin-left:20px;
+            
+        }
+
+        .drop{
+            font-size: medium;
+            background-color: bisque;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 2px;
+            border-radius: 5px;
+        }
+        .drop:hover{
+            color:red;
+            background-color: white;
+            border-style: groove;
+            border-color: black;
+            cursor:pointer;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all is ease;
+            
+        }
+        .image1{
+            position: absolute;
+            left:35%;
+            top: 220px;
+
+        }
+        .img1{
+            border-radius:50%;
+            height: 150px;
+        }
+        .image2{
+            position: absolute;
+            left:50%;
+            top: 220px;
+
+        }
+        .img2{
+            border-radius:10%;
+            border-bottom-left-radius: 15%;
+            height: 150px;
+        }
+        .Footer{
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            top:840px;
+            left: 0px;
+            background-color: rgb(44, 58, 77);
+            
+        }
+        .socials{
+            color: white;
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 10%;
+            
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+        }
+        
+        .lastbutt{
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            
+        }
+        .lastbutt :hover{
+            color: black;
+            background-color: white;
+            border-radius: 2px;
+            cursor:pointer;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all is ease;
+           
+
+        }
+        
+    </style>
+</head>
+<body style="background: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80)no-repeat;background-size:cover;background-color: black;">
+  
+    <nav class="nav">
+        <div class="logo">
+            <img class="logoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSL9zmr4Kl6e-cUqzMTdDDf5i2Sl1tN6Vnpg&usqp=CAU">
+        </div>
+        <div class="nav-a">
+            <a href="">
+                <i class="fa-solid fa-house"></i>
+                HOME
+                
+            </a>
+            <a href="">
+                <i class="fa-solid fa-user"></i>
+                ABOUT
+            </a>
+            <a href="">
+                <i class="fa-solid fa-bars-progress"></i>
+                PROJECTS
+            </a>
+            <a href="">
+                <i class="fa-solid fa-file-contract"></i>
+                RESUME
+            </a>
+            <a href="">
+                <i class="fa-solid fa-address-card"></i>
+                CONTACT
+            </a>
+
+        </div>
+
+    </nav>
+
+    
+    <main class="main">
+        <marquee class="mar">NEVER GONNA GIVE YOU UP,NEVER GONNA LET YOU DOWN</marquee> 
+        <div class="main-m">
+            SRS
+        </div>
+        <div class="main-m1">
+            WELCOME TO MY PORTFOLIO
+        </div>
+        <div class="main-l">
+            <h1 class="name">HI I AM SRS </h1>
+            <h1 class="name1">AN ASTROPHILE
+                <i class="fa-solid fa-rocket"></i>
+            </h1>
+            <p class="para">
+                WHEN I LOOK INTO THE NIGHT SKY I SEE MY REFLECTION IN IT.
+                WHAT MORE YOU NEED? HIRE ME NOW!!
+
+            </p>
+                
+             
+            <button class="hire" type="button">
+                HIRE ME!!!
+            </button>
+         </div>
+        <div class="main-r">
+            <div class="detail">
+                <details >
+                    <summary >
+                        SKILLS
+                    </summary>
+                    
+                    <div class="drop">HTML</div>
+                    <div class="drop">CSS</div>
+                    <div class="drop">ANSYS</div>
+                    <div class="drop">OPEN ROCKET</div>
+                    
+                </details>          
+              </div>
+              <div class="detail">
+                <details >
+                    <summary>
+                        PROJECTS
+                    </summary>
+                    <div class="drop">SASTA OPEN ROCKET</div>
+                    <div class="drop">DRONE</div>
+                    <div class="drop">TELESCOPE</div>
+                    <div class="drop">RC PLANE</div>
+                </details>          
+              </div>
+              <div class="detail">
+                <details >
+                    <summary  >
+                        INTERNSHIPS
+                    </summary>
+                    <div class="drop">ABHI TAK TOH NAHIN</div>
+                     
+                </details>          
+              </div>
+              <div class="detail">
+                <details >
+                    <summary >
+                        HOBBIES
+                    </summary>
+                    <div class="drop">STARGAZING</div>
+                    <div class="drop">TELESCOPING</div>
+                    <div class="drop">BOOK READING</div>
+                    <div class="drop">STARCHART</div>
+                    <div class="drop">SLEEPING</div>    
+                    
+                </details>          
+              </div>
+        </div>
+
+        </div>
+        <div class="image1">
+            <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSL9zmr4Kl6e-cUqzMTdDDf5i2Sl1tN6Vnpg&usqp=CAU">
+        </div>
+        <div class="image2">
+            <img class="img2" src="data:image/png;base64,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">
+        </div>
+        
+    </main>
+    <footer class="Footer">
+        <div class="socials">
+            <div>
+            <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+            <i class="fa-solid fa-copyright"></i>
+            </div>
+            <form style="background-color: black;position: absolute;right:15px ;top: 0px;;">
+                <input style="width: 450px;height: 25px;" type="text" placeholder="NAME">
+                <button class="lastbutt" type="submit" style="background-color:BLACK;height:10px ;border: radius 5px;cursor:pointer;">
+                    <div>SUBMIT</div>
+                </button>
+            </form>
+        </div>
+        
+    </footer>
+</body>
+</html>
